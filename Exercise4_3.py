@@ -15,8 +15,8 @@ def paretosample(count, alpha, m):
 
 if __name__ == '__main__':
     cdf = Cdf.MakeCdfFromList(paretosample(1000, 1, 0.5))
-    # myplot.Cdf(cdf, complement=True)
-    # myplot.Show(xscale='log', yscale='log')
+    myplot.Cdf(cdf, complement=True)
+    myplot.Show(xscale='log', yscale='log')
     myplot.Cdf(cdf)
     myplot.Show()
     
