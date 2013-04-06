@@ -41,7 +41,6 @@ def CalculateRelativeRisks(firsts, others):
 def main(name, data_dir=''):
     pool, firsts, others = descriptive.MakeTables(data_dir)
     
-    
     first_probs = CalculateProbs(firsts.pmf)
     other_probs = CalculateProbs(others.pmf)
     print "First", first_probs
